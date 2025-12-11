@@ -33,7 +33,7 @@ main img {
   -o-object-position: center;
      object-position: center;
 }
-main #apps {
+/* main #apps {
   height: 94%;
   width: 10%;
   display: flex;
@@ -41,7 +41,20 @@ main #apps {
   gap: 1rem;
   padding: 40px 30px;
   flex-wrap: wrap;
+} */
+
+main #apps {
+  height: 94%;
+  width: auto;            
+  max-width: 160px;       
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px 12px;     
+  flex-wrap: wrap;
 }
+
+
 main #apps .app-icon {
   height: 80px;
   width: 80px;
@@ -53,8 +66,22 @@ main #apps .app-icon {
   text-align: center;
   white-space: nowrap;
   border-radius: 10px;
-  padding: 3rem;
+  padding: 0.5rem;        
 }
+
+/* main #apps .app-icon {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 10px;
+  padding: 3rem;
+} */
 main #apps .app-icon:hover {
   background-color: rgb(95, 92, 92);
   cursor: pointer;
