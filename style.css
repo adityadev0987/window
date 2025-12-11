@@ -307,3 +307,20 @@ main .new-popup:hover {
   visibility: visible;
   pointer-events: auto;
 }
+
+/* Safety caps for images and popups to prevent overflow on deployed site */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* cap popup sizes so they never blow out layout */
+main .view-popup,
+main .sort-popup,
+main .new-popup {
+  max-width: 340px;   /* won't grow beyond this */
+  width: auto;        /* let content size itself within limit */
+  box-sizing: border-box;
+  padding: 10px;
+}
